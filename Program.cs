@@ -8,18 +8,14 @@ namespace Aula20
         {
 
             Cliente gustavo = new Cliente("Gustavo","itaquera");
-            System.Console.WriteLine(gustavo.Nome);
-            System.Console.WriteLine(gustavo.EnderecoAtual);
+            Console.WriteLine(gustavo.MostrarDados());
 
             Restaurante mcdonalds = new Restaurante("mc donalds","Centro");
-            System.Console.WriteLine(mcdonalds.NomeRestaurante);
-            System.Console.WriteLine(mcdonalds.Endereco);
+            Console.WriteLine(mcdonalds.MostrarDados());
             
             Pedido pedido = new Pedido();
-            pedido.Itens = "Lanches";
-            pedido.Quantidade = 2;
-            pedido.FormaDePGTO = "cartao";
-            pedido.EntregarPedido();
+            Console.WriteLine(pedido.EntregarPedido());
+            
             
         }
     }

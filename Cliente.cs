@@ -9,5 +9,8 @@ namespace Aula20
             this.Nome = _nome;
             this.EnderecoAtual = _enderecoatual;
         }
+        public string MostrarDados(){
+            return $"Cliente: {Nome} \nEndereço: {EnderecoAtual}";
+        }
     }
 }

@@ -9,6 +9,9 @@ namespace Aula20
             NomeRestaurante = _nomerestaurante;
             Endereco = _endereco;
         }
+        public string MostrarDados(){
+            return $"Restaurante: {NomeRestaurante}\nEndereço do restaurante: {Endereco}";
+        }
         
     }
 }
